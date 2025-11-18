@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "src": "/all-comments",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
