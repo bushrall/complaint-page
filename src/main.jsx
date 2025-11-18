@@ -4,6 +4,8 @@ import App from './App'
 import './styles/header.css'
 import './styles/main.css'
 import './styles/footer.css'
+import './styles/AllCommentsPage.css'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

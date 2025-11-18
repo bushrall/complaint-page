@@ -217,12 +217,10 @@ export const mockSubmissions = [
   }
 ];
 
-// Add the missing export that ReportForm.jsx is looking for
+
 export const addNewSubmission = (newSubmission) => {
-  // Generate a new ID
   const newId = Math.max(...mockSubmissions.map(item => item.id)) + 1;
   
-  // Create the complete submission object
   const submissionWithId = {
     ...newSubmission,
     id: newId,
@@ -239,7 +237,5 @@ export const addNewSubmission = (newSubmission) => {
   
   console.log('New submission created:', submissionWithId);
   
-  // Note: In a real app, you would update state or send to backend
-  // For now, we just return the new submission
   return submissionWithId;
 };
